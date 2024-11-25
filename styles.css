@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFBE8;
+    background-color: #F7F0D5;
     margin: 0;
     padding: 0;
 }
@@ -12,11 +12,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #FFFBE8;
+    background-color: #F7F0D5;
     height: 60px;
     position: relative; /* Create a stacking context */
     z-index: 1000; /* Ensure it's above the rest of the page */
-    border-bottom: 3px solid #000;
+    border-bottom: 1.5px solid #000;
 }
 
 /* Logo Styles */
@@ -36,14 +36,14 @@ header {
 }
 
 #logo .line1 {
-    font-size: 36px; /* Font size for "Codes" */
+    font-size: 32px; /* Font size for "Codes" */
     display: block; /* Ensure "Codes" is on a separate line */
     margin-bottom: -5px; /* Reduce gap below "Codes" */
     font-weight: normal; /* Explicitly set to normal */
 }
 
 #logo .line2 {
-    font-size: 36px; /* Font size for "of" */
+    font-size: 32px; /* Font size for "of" */
     display: block; /* Ensure "of Craft" is on a separate line */
     margin-top: 0; /* Remove additional margin */
     position: relative; /* Adjust position if necessary */
@@ -53,7 +53,7 @@ header {
 
 #logo .craft {
     font-family: "Krungthep", sans-serif; /* Custom font for "Craft" */
-    font-size: 40px; /* Slightly larger font size for "Craft" */
+    font-size: 36px; /* Slightly larger font size for "Craft" */
     color: #FF0000; /* Red color for "Craft" */
     font-weight: normal; /* Ensure "Craft" is not bold */
 }
@@ -156,8 +156,8 @@ h2 {
 /* Right Buttons Text Style */
 .role {
     display: flex;
-    justify-content: flex-end; /* Align text horizontally to the left */
-    align-items: flex-start; /* Align text vertically to the bottom */
+    justify-content: center; /* Align text horizontally to the left */
+    align-items: center; /* Align text vertically to the bottom */
     flex-direction: column; /* Stack text vertically in step-wise manner */
     font-family: "Krungthep", sans-serif; /* Or a similar outlined font */
     font-size: 40px; /* Adjust text size */
@@ -165,7 +165,7 @@ h2 {
     cursor: pointer;
     font-weight: bold;
     text-align: right; /* Align text to the right inside the button */
-    border: 1.5px solid #000; /* Black border around the buttons */
+    height: 359px;
     padding: 20px; /* Add spacing inside the button */
     box-sizing: border-box; /* Include padding in the size */
     letter-spacing: 1px; /* Add spacing for clarity */
@@ -173,14 +173,35 @@ h2 {
     color: transparent; /* Text color matches the button background */
     line-height: 1; /* Adjust line height for step-wise alignment */
     position: relative; /* Allow precise positioning */
-    z-index: 1;
+    z-index: 1; /* Ensure text stays above the background */
+    overflow: hidden;   /* Hide overflow text */
+}
+
+.role img.icon {
+    width: 300px; /* Adjust size */
+    height: 300px; /* Adjust size */
+    margin-bottom: 10px; /* Space between icon and text */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.role:hover img.icon {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 /* Zig-Zag Styling for Each Line */
 .role span {
     display: block; /* Ensure each text is on its own line */
     width: 100%; /* Let the text span full width */
+    line-height: 1.75; /* Adjust line spacing */
+    margin-top: -30px; /* Slightly overlap with the previous line */
     position: relative; /* Allow left and right alignment */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover Effect for Buttons */
+.role:hover span {
+    transform: translateY(-10px); /* Text moves upwards */
+    opacity: 0.8; /* Slightly fade text */
 }
 
 .role span:nth-child(odd) {
@@ -217,6 +238,7 @@ h2 {
 /* Hover Effect for Buttons */
 .role:hover {
     opacity: 0.9; /* Hover effect */
+    transition: all 0.3s ease;
 }
 
 #start-test {
