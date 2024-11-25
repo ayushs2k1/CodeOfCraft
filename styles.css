@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFBE8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFBE8;
+    height: 60px;
+    position: relative; /* Create a stacking context */
+    z-index: 1000; /* Ensure it's above the rest of the page */
+    border-bottom: 3px solid #000;
+}
+
+/* Logo Styles */
+#logo {
+    text-decoration: none; /* Remove underline for clickable link */
+    font-family: "Avenir Black Oblique", sans-serif; /* Default font for "Codes of" */
+    font-size: 24px; /* Base font size */
+    color: #000; /* Default color for "Codes of" */
+    line-height: 1; /* Reduce line spacing */
+    text-align: left; /* Align text to the left */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    font-weight: normal; /* Ensure no bold text by default */
+    position: relative; /* Allow precise positioning */
+    top: 15px; /* Move it down */
+    left: 25px; /* Move it to the right */
+    z-index: 10; /* Ensure it stays on top */
+}
+
+#logo .line1 {
+    font-size: 36px; /* Font size for "Codes" */
+    display: block; /* Ensure "Codes" is on a separate line */
+    margin-bottom: -5px; /* Reduce gap below "Codes" */
+    font-weight: normal; /* Explicitly set to normal */
+}
+
+#logo .line2 {
+    font-size: 36px; /* Font size for "of" */
+    display: block; /* Ensure "of Craft" is on a separate line */
+    margin-top: 0; /* Remove additional margin */
+    position: relative; /* Adjust position if necessary */
+    top: -20px; /* Slightly move "of Craft" upwards */
+    font-weight: normal; /* Ensure "of" is not bold */
+}
+
+#logo .craft {
+    font-family: "Krungthep", sans-serif; /* Custom font for "Craft" */
+    font-size: 40px; /* Slightly larger font size for "Craft" */
+    color: #FF0000; /* Red color for "Craft" */
+    font-weight: normal; /* Ensure "Craft" is not bold */
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    transform: translateX(-100px);
+    z-index: 1500; /* Ensure the navigation stays above other elements */
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 80px; /* Increased spacing between items */
+    cursor: pointer;
+    font-family: "Avenir Black Oblique", sans-serif; /* Updated font */
+    font-size: 20px; /* Increased text size */
+    color: #000; /* Default color for text */
+}
+
+nav ul li:last-child {
+    color: #FF0000; /* Red color for the "+" sign */
+    font-size: 20px; /* Slightly larger font for "+" */
+    font-weight: bold; /* Make "+" stand out */
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFBE8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000; /* Set a high z-index for dropdown visibility */
+    border-radius: 10px; /* Add rounded corners */
+    min-width: 150px; /* Set a wider minimum width */
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px; /* Add subtle rounding to individual links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.dropdown-content a:hover {
+    background-color: #FF0000;
+}
+
+/* Split Layout */
+.split {
+    display: flex;
+    height: calc(100vh - 80px); /* Full height minus header */
+}
+
+/* Left Text Half */
+.text-half {
+    flex: 1; /* Take up the left half of the page */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack content vertically */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add some padding */
+}
+
+h2 {
+    font-family: "Krungthep", sans-serif; /* Updated font */
+    font-size: 24px; /* Adjust font size */
+    line-height: 1.5; /* Adjust line spacing */
+    color: #FF0000; /* Text color */
+    margin-bottom: 30px; /* Space between text and button */
+}
+
+/* Right Buttons Half */
+.buttons-half {
+    flex: 1; /* Take up the right half of the page */
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: 1fr 1fr; /* Two rows */
+    gap: 0; /* Remove gaps between buttons */
+    padding: 0; /* Remove padding inside the grid */
+    margin: 0; /* Remove margin */
+    height: 100%; /* Ensure it spans full height */
+    z-index: 1; /* Ensure buttons have a lower stacking order */
+    position: relative;
+}
+
+/* Right Buttons Text Style */
+.role {
+    display: flex;
+    justify-content: flex-end; /* Align text horizontally to the left */
+    align-items: flex-start; /* Align text vertically to the bottom */
+    flex-direction: column; /* Stack text vertically in step-wise manner */
+    font-family: "Krungthep", sans-serif; /* Or a similar outlined font */
+    font-size: 40px; /* Adjust text size */
+    text-transform: uppercase; /* Ensure uppercase letters */
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right; /* Align text to the right inside the button */
+    border: 1.5px solid #000; /* Black border around the buttons */
+    padding: 20px; /* Add spacing inside the button */
+    box-sizing: border-box; /* Include padding in the size */
+    letter-spacing: 1px; /* Add spacing for clarity */
+    -webkit-text-stroke: 1px #000; /* Black outline around text */
+    color: transparent; /* Text color matches the button background */
+    line-height: 1; /* Adjust line height for step-wise alignment */
+    position: relative; /* Allow precise positioning */
+    z-index: 1;
+}
+
+/* Zig-Zag Styling for Each Line */
+.role span {
+    display: block; /* Ensure each text is on its own line */
+    width: 100%; /* Let the text span full width */
+    position: relative; /* Allow left and right alignment */
+}
+
+.role span:nth-child(odd) {
+    text-align: left; /* Odd lines aligned to the left */
+    margin-left: 10px; /* Add small margin for left-aligned text */
+}
+
+.role span:nth-child(even) {
+    text-align: right; /* Even lines aligned to the right */
+    margin-right: 10px; /* Add small margin for right-aligned text */
+}
+
+/* Background Colors for Buttons */
+.role:nth-child(1) {
+    background-color: #FFD4AE;
+    color: #FFD4AE;
+}
+
+.role:nth-child(2) {
+    background-color: #3FA559;
+    color: #3FA559;
+}
+
+.role:nth-child(3) {
+    background-color: #FF0000;
+    color: #FF0000;
+}
+
+.role:nth-child(4) {
+    background-color: #FF8DB9;
+    color: #FF8DB9;
+}
+
+/* Hover Effect for Buttons */
+.role:hover {
+    opacity: 0.9; /* Hover effect */
+}
+
+#start-test {
+    width: 280px; /* Fixed width */
+    height: 61px; /* Fixed height */
+    background-color: #FF0000; /* Button background color */
+    color: #FFF; /* Text color */
+    border: none; /* Remove borders */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Adjust text size */
+    font-weight: 500; /* Medium boldness */
+    text-transform: uppercase; /* Ensure text is uppercase */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    font-family: "Avenir Black Oblique", sans-serif; /* Custom font style for button */
+}
+
+#start-test:hover {
+    background-color: #D00000; /* Darker red on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Fullscreen Image Section */
+.fullscreen-image {
+    position: relative;
+    height: 100vh; /* Fullscreen height */
+    border: 1.5px solid black; /* Add border around the container */
+    background: url('artisan image.png') center/cover no-repeat; /* Background image */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #fff; /* Text color */
+    text-align: center;
+}
+
+/* Quotes Container */
+.quotes-container {
+    position: absolute; /* Allows precise positioning */
+    top: 50%; /* Start at the vertical center */
+    left: 50%; /* Start at the horizontal center */
+    transform: translate(-50%, -50%); /* Adjust to center the container */
+    text-align: center; /* Center-align text */
+    width: 80%; /* Optional: Set width for better layout on smaller screens */
+    font-size: 24px; /* Adjust text size */
+    line-height: 1.5; /* Adjust line spacing */
+}
+
+/* Individual Quotes */
+.quote {
+    font-family: 'Krungthep', sans-serif; /* Font style */
+    font-size: 24px; /* Adjust text size */
+    line-height: 1.5;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 1s ease-in-out; /* Smooth fade-in and fade-out */
+    position: absolute;
+    width: 100%;
+    color: #fff; /* Ensure text is visible */
+}
+
+/* Active Quote */
+.quote.active {
+    opacity: 1; /* Show active quote */
+}

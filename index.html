@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes of Craft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="homepage">
+        <header>
+            <!-- Clickable Logo with JS Function -->
+            <h1 id="logo" onclick="navigateToHomepage()">
+                <span class="line1">CODES</span><br />
+                <span class="line2">OF <span class="craft">CRAFT</span></span>
+            </h1>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        RESOURCES
+                        <div class="dropdown-content">
+                            <a href="#" onclick="navigateToPage('resource1.html')">Resource 1</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        COLLABORATE
+                        <div class="dropdown-content">
+                            <a href="#" onclick="navigateToPage('collaborate1.html')">Collaborate 1</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        +
+                        <div class="dropdown-content">
+                            <a href="#" onclick="navigateToPage('more1.html')">More 1</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="split">
+            <div class="text-half">
+                <h2>
+                    Discover Your Role in Shaping <br />
+                    Brand–Artisan Relationships
+                </h2>
+                <button id="start-test" onclick="navigateToQuiz()">Start Test</button>
+            </div>
+            <div class="buttons-half">
+                <div class="role" onclick="navigateToPage('cultural-custodian.html')">
+                    <span>Cultural</span>
+                    <span>Custodian</span>
+                </div>
+                <div class="role" onclick="navigateToPage('systems-weaver.html')">
+                    <span>Systems</span>
+                    <span>Weaver</span>
+                </div>
+                <div class="role" onclick="navigateToPage('partnership-architect.html')">
+                    <span>Partnership</span>
+                    <span>Architect</span>
+                </div>
+                <div class="role" onclick="navigateToPage('equity-advocate.html')">
+                    <span>Equity</span>
+                    <span>Advocate</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- New Fullscreen Section -->
+    <section class="fullscreen-image">
+        <div class="quotes-container">
+            <p class="quote">"Empowering artisans strengthens cultural heritage."</p>
+            <p class="quote">"Craftsmanship is the soul of a community."</p>
+            <p class="quote">"Every product tells a story of the hands that made it."</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Codes of Craft. All Rights Reserved.</p>
+            <nav class="footer-nav">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
