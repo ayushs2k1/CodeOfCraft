@@ -304,18 +304,51 @@ h2 {
     opacity: 1; /* Show active quote */
 }
 
-/* Media Queries */
+/* Media Queries for Stacking */
 @media (max-width: 768px) {
-    nav ul {
+    /* Stack Everything */
+    header {
         flex-direction: column;
         align-items: center;
     }
 
+    nav ul {
+        flex-direction: column; /* Stack navigation vertically */
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .split {
+        flex-direction: column; /* Stack left and right sections vertically */
+        height: auto; /* Adjust height */
+    }
+
+    .text-half {
+        order: 2; /* Display after the navigation bar */
+        padding: 20px;
+    }
+
     .buttons-half {
-        grid-template-columns: 1fr;
+        order: 3; /* Display after the left section */
+        grid-template-columns: 1fr; /* Stack buttons in one column */
+        gap: 20px; /* Increase spacing between buttons */
+    }
+
+    .fullscreen-image {
+        order: 4; /* Display after the buttons */
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .footer {
+        order: 5; /* Footer at the bottom */
     }
 
     .role {
-        width: 90%;
+        width: 90%; /* Button takes up most of the screen width */
+    }
+
+    .fullscreen-image .quotes-container {
+        width: 90%; /* Adjust container width on small screens */
+        font-size: 20px; /* Reduce quote font size */
     }
 }
