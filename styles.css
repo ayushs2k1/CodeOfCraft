@@ -303,3 +303,19 @@ h2 {
 .quote.active {
     opacity: 1; /* Show active quote */
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-half {
+        grid-template-columns: 1fr;
+    }
+
+    .role {
+        width: 90%;
+    }
+}

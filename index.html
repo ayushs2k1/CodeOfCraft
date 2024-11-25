@@ -9,27 +9,24 @@
 <body>
     <div class="homepage">
         <header>
-            <!-- Clickable Logo with JS Function -->
+            <!-- Logo -->
             <h1 id="logo" onclick="navigateToHomepage()">
                 <span class="line1">CODES</span><br />
                 <span class="line2">OF <span class="craft">CRAFT</span></span>
             </h1>
             <nav>
                 <ul>
-                    <li class="dropdown">
-                        RESOURCES
+                    <li class="dropdown">RESOURCES
                         <div class="dropdown-content">
                             <a href="#" onclick="navigateToPage('resource1.html')">Resource 1</a>
                         </div>
                     </li>
-                    <li class="dropdown">
-                        COLLABORATE
+                    <li class="dropdown">COLLABORATE
                         <div class="dropdown-content">
                             <a href="#" onclick="navigateToPage('collaborate1.html')">Collaborate 1</a>
                         </div>
                     </li>
-                    <li class="dropdown">
-                        +
+                    <li class="dropdown">+
                         <div class="dropdown-content">
                             <a href="#" onclick="navigateToPage('more1.html')">More 1</a>
                         </div>
@@ -38,6 +35,7 @@
             </nav>
         </header>
         <main class="split">
+            <!-- Left Text Section -->
             <div class="text-half">
                 <h2>
                     Discover Your Role in Shaping <br />
@@ -45,6 +43,7 @@
                 </h2>
                 <button id="start-test" onclick="navigateToQuiz()">Start Test</button>
             </div>
+            <!-- Right Buttons Section -->
             <div class="buttons-half">
                 <div class="role" onclick="navigateToPage('cultural-custodian.html')">
                     <img src="CC.png" alt="Cultural Icon" class="icon">
@@ -52,17 +51,17 @@
                     <span>Custodian</span>
                 </div>
                 <div class="role" onclick="navigateToPage('systems-weaver.html')">
-                    <img src="SW.png" alt="Cultural Icon" class="icon">
+                    <img src="SW.png" alt="Systems Icon" class="icon">
                     <span>Systems</span>
                     <span>Weaver</span>
                 </div>
                 <div class="role" onclick="navigateToPage('partnership-architect.html')">
-                    <img src="PA.png" alt="Cultural Icon" class="icon">
+                    <img src="PA.png" alt="Partnership Icon" class="icon">
                     <span>Partnership</span>
                     <span>Architect</span>
                 </div>
                 <div class="role" onclick="navigateToPage('equity-advocate.html')">
-                    <img src="EA.png" alt="Cultural Icon" class="icon">
+                    <img src="EA.png" alt="Equity Icon" class="icon">
                     <span>Equity</span>
                     <span>Advocate</span>
                 </div>
@@ -70,7 +69,7 @@
         </main>
     </div>
 
-    <!-- New Fullscreen Section -->
+    <!-- Fullscreen Section -->
     <section class="fullscreen-image">
         <div class="quotes-container">
             <p class="quote">"Empowering artisans strengthens cultural heritage."</p>
@@ -79,6 +78,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2024 Codes of Craft. All Rights Reserved.</p>
