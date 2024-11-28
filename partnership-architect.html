@@ -7,40 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-container">
-        <header>
-            <h1 id="logo" onclick="navigateToHomepage()">CODES OF CRAFT</h1>
-            <nav>
-                <ul>
-                    <li class="dropdown">
-                        Resources
-                        <div class="dropdown-content">
-                            <a href="resource1.html">Resource 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        Collaborate
-                        <div class="dropdown-content">
-                            <a href="collaborate1.html">Collaborate 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        +
-                        <div class="dropdown-content">
-                            <a href="more1.html">More 1</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Welcome to Cultural Custodian</h2>
-            <p>This is the Cultural Custodian page. Add relevant content about this role here.</p>
-        </main>
-        <footer>
-            <p>&copy; 2024 Codes of Craft</p>
-        </footer>
+    <div class="partnership-architect-container">
+        <!-- Left Half -->
+        <div class="left-half">
+            <h1>PARTNERSHIP </br> ARCHITECT</h1>
+            <p>
+                You are building relationships with artisans and starting to balance empathy with operational goals. Your ability to value and integrate artisans’ contributions in specific contexts demonstrates growing awareness. As you refine your collaboration and consistency, you can deepen your impact and foster stronger connections across teams and stakeholders.
+            </p>
+            <h3>Strengths:</h3>
+            <ul>
+                <li>Strong relational skills and ability to foster trust.</li>
+                <li>Willing to engage in collaborative efforts when opportunities arise.</li>
+            </ul>
+            <h3>Untapped Potential:</h3>
+            <ul>
+                <li>Strong collaboration skills could be scaled to influence broader organizational practices.</li>
+                <li>Ability to balance empathy with operational goals positions them to drive long-term sustainability.</li>
+            </ul>
+        </div>
+
+        <!-- Right Half -->
+        <div class="right-half">
+            <!-- Top Right Section -->
+            <div class="top-right">
+                <div class="image-button-container">
+                    <div class="image-container">
+                        <img src="image3.png" alt="Growth Catalyst Icon">
+                    </div>
+                    <button class="square-button" onclick="getStarted()">Your Ideal Collaborator: <br />
+                    <br />Cultural Custodian<br />
+                    </button>
+                </div>
+            </div>
+            <!-- Bottom Right Section -->
+            <div class="bottom-right">
+                <p>
+                    Look for individuals who often share artisan stories in team discussions or advocate for initiatives that spotlight artisans’ contributions and their heritage. They can help you integrate empathy more deeply into your projects. </br>
+                    <a href="cultural-custodian.html">Explore Resources</a>
+                </p>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function getStarted() {
+            window.location.href = "cultural-custodian.html";
+        }
+    </script>
 </body>
 </html>

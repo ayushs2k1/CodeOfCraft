@@ -7,40 +7,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-container">
-        <header>
-            <h1 id="logo" onclick="navigateToHomepage()">CODES OF CRAFT</h1>
-            <nav>
-                <ul>
-                    <li class="dropdown">
-                        Resources
-                        <div class="dropdown-content">
-                            <a href="resource1.html">Resource 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        Collaborate
-                        <div class="dropdown-content">
-                            <a href="collaborate1.html">Collaborate 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        +
-                        <div class="dropdown-content">
-                            <a href="more1.html">More 1</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Welcome to Cultural Custodian</h2>
-            <p>This is the Cultural Custodian page. Add relevant content about this role here.</p>
-        </main>
-        <footer>
-            <p>&copy; 2024 Codes of Craft</p>
-        </footer>
+    <div class="cultural-custodian-container">
+        <!-- Left Half -->
+        <div class="left-half">
+            <h1>CULTURAL </br> CUSTODIAN</h1>
+            <p>
+                You demonstrate strong emotional and relational empathy, deeply valuing artisans’ cultural and emotional narratives. By integrating these into your work, you actively honor their contributions and build trust. You have the potential to expand your influence by mentoring others and embedding empathy-driven practices into broader brand strategies.
+            </p>
+            <h3>Strengths:</h3>
+            <ul>
+                <li>Deeply engaged with artisans’ realities and actively encourages incorporation of artisans’ stories and contributions into brand narratives.</li>
+                <li>Builds meaningful relationships based on trust and mutual respect.</li>
+            </ul>
+            <h3>Untapped Potential:</h3>
+            <ul>
+                <li>Expertise in storytelling could be extended to influence systemic strategies within the organization.</li>
+                <li>By mentoring others, they can amplify the cultural narratives they value across more brand functions.</li>
+                <li>Have the ability to align artisans’ cultural heritage with the brand’s long-term operational and strategic goals.</li>
+            </ul>
+        </div>
+
+        <!-- Right Half -->
+        <div class="right-half">
+            <!-- Top Right Section -->
+            <div class="top-right">
+                <div class="image-button-container">
+                    <div class="image-container">
+                        <img src="image3.png" alt="Growth Catalyst Icon">
+                    </div>
+                    <button class="square-button" onclick="getStarted()">Your Ideal Collaborator: <br />
+                    <br />Systems Weaver<br />
+                    </button>
+                </div>
+            </div>
+            <!-- Bottom Right Section -->
+            <div class="bottom-right">
+                <p>
+                    Work with colleagues who take a big-picture view of artisan partnerships. They are often involved in cross-departmental projects, sustainability programs, or strategic planning. They can help you align your storytelling efforts with systemic goals while you can ensure that artisans’ narratives are integrated into broader organizational frameworks and strategies. </br>
+                    <a href="systems-weaver.html">Explore Resources</a>
+                </p>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function getStarted() {
+            window.location.href = "systems-weaver.html";
+        }
+    </script>
 </body>
 </html>

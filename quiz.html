@@ -7,40 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-container">
-        <header>
-            <h1 id="logo" onclick="navigateToHomepage()">CODES OF CRAFT</h1>
-            <nav>
-                <ul>
-                    <li class="dropdown">
-                        Resources
-                        <div class="dropdown-content">
-                            <a href="resource1.html">Resource 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        Collaborate
-                        <div class="dropdown-content">
-                            <a href="collaborate1.html">Collaborate 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        +
-                        <div class="dropdown-content">
-                            <a href="more1.html">More 1</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Welcome to Cultural Custodian</h2>
-            <p>This is the Cultural Custodian page. Add relevant content about this role here.</p>
-        </main>
-        <footer>
-            <p>&copy; 2024 Codes of Craft</p>
-        </footer>
+    <div class="quiz-container">
+        <!-- Questionnaire Section -->
+        <section id="quiz-section">
+            <div id="question-container">
+                <!-- Question will be dynamically loaded here -->
+            </div>
+            <div id="button-container">
+                <!-- Buttons for options -->
+            </div>
+        </section>
+        
+        <!-- Loading Screen Section -->
+        <section id="loading-screen" style="display: none;">
+            <p>Matching your archetype<span id="loading-dots">...</span></p>
+        </section>
     </div>
     <script src="script.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>

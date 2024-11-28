@@ -7,40 +7,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-container">
-        <header>
-            <h1 id="logo" onclick="navigateToHomepage()">CODES OF CRAFT</h1>
-            <nav>
-                <ul>
-                    <li class="dropdown">
-                        Resources
-                        <div class="dropdown-content">
-                            <a href="resource1.html">Resource 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        Collaborate
-                        <div class="dropdown-content">
-                            <a href="collaborate1.html">Collaborate 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        +
-                        <div class="dropdown-content">
-                            <a href="more1.html">More 1</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Welcome to Cultural Custodian</h2>
-            <p>This is the Cultural Custodian page. Add relevant content about this role here.</p>
-        </main>
-        <footer>
-            <p>&copy; 2024 Codes of Craft</p>
-        </footer>
+    <div class="systems-weaver-container">
+        <!-- Left Half -->
+        <div class="left-half">
+            <h1>SYSTEMS </br> WEAVER</h1>
+            <p>
+                You excel across all dimensions of empathy, integrating emotional, cognitive, relational, and compassionate empathy into your leadership. You act as a transformative leader, driving systemic change and mentoring others to deepen their engagement with artisans. Your ability to create sustainable frameworks and empower artisans positions you as a changemaker in fostering equity and collaboration.
+            </p>
+            <h3>Strengths:</h3>
+            <ul>
+                <li>Excels in systemic thinking, aligning empathy with operational and strategic goals.</li>
+                <li>Creates and leads initiatives that empower artisans and foster equity.</li>
+                <li>Mentors others, facilitating growth and collaboration across teams.</li>
+            </ul>
+            <h3>Untapped Potential:</h3>
+            <ul>
+                <li>Strategic focus could benefit from stronger connections to artisans’ personal stories and emotional realities.</li>
+                <li>Collaboration with more relational archetypes could humanize systemic strategies, making them more impactful.</li>
+                <li>Leadership can be used to create frameworks that inspire empathy and equity at an industry-wide level.</li>
+            </ul>
+        </div>
+
+        <!-- Right Half -->
+        <div class="right-half">
+            <!-- Top Right Section -->
+            <div class="top-right">
+                <div class="image-button-container">
+                    <div class="image-container">
+                        <img src="image3.png" alt="Growth Catalyst Icon">
+                    </div>
+                    <button class="square-button" onclick="getStarted()">Your Ideal Collaborator: <br />
+                    <br />Cultural Custodian<br />
+                    </button>
+                </div>
+            </div>
+            <!-- Bottom Right Section -->
+            <div class="bottom-right">
+                <p>
+                    Partner with those who passionately advocate for artisan narratives and champion their inclusion in brand identity. Their human-centric insights can complement your strategic approach, ensuring it remains emotionally resonant and aligned with the artisans’ stories. </br>
+                    <a href="cultural-custodian.html">Explore Resources</a>
+                </p>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function getStarted() {
+            window.location.href = "cultural-custodian.html";
+        }
+    </script>
 </body>
 </html>
